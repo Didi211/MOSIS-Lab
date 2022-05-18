@@ -52,8 +52,7 @@ class MainActivity : AppCompatActivity() {
             R.id.action_new_place -> makeText(this,"New Place", LENGTH_SHORT).show()
 //            R.id.action_my_places_list -> makeText(this,"My Places List", LENGTH_SHORT).show()
             R.id.action_my_places_list -> {
-                val i: Intent = Intent(this,MyPlacesList::class.java)
-                startActivity(i)
+                this.findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_FirstFragment_to_SecondFragment)
             }
 //            R.id.action_about -> makeText(this,"About", LENGTH_SHORT).show()
             R.id.action_about -> {
