@@ -37,31 +37,31 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return true
-    }
+//    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        menuInflater.inflate(R.menu.menu_main, menu)
+//        return true
+//    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        when (item.itemId) {
-            R.id.action_show_map -> makeText(this,"Show Map", LENGTH_SHORT).show()
-            R.id.action_new_place -> makeText(this,"New Place", LENGTH_SHORT).show()
-//            R.id.action_my_places_list -> makeText(this,"My Places List", LENGTH_SHORT).show()
-            R.id.action_my_places_list -> {
-                this.findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_FirstFragment_to_SecondFragment)
-            }
-//            R.id.action_about -> makeText(this,"About", LENGTH_SHORT).show()
-            R.id.action_about -> {
-                val i: Intent = Intent(this, About::class.java)
-                startActivity(i)
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
+//    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        when (item.itemId) {
+//            R.id.action_show_map -> makeText(this,"Show Map", LENGTH_SHORT).show()
+//            R.id.action_new_place -> makeText(this,"New Place", LENGTH_SHORT).show()
+////            R.id.action_my_places_list -> makeText(this,"My Places List", LENGTH_SHORT).show()
+//            R.id.action_my_places_list -> {
+//                this.findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.action_HomeFragment_to_ListFragment)
+//            }
+////            R.id.action_about -> makeText(this,"About", LENGTH_SHORT).show()
+//            R.id.action_about -> {
+//                val i: Intent = Intent(this, About::class.java)
+//                startActivity(i)
+//            }
+//        }
+//        return super.onOptionsItemSelected(item)
+//    }
 
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
