@@ -2,13 +2,19 @@
     <string name="app_name">My Places</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="home_fragment_label">Home fragment</string>
-    <string name="list_fragment_label">List fragment</string>
-    <string name="edit_fragment_label">Edit fragment</string>
+    <string name="home_fragment_label">Home</string>
+    <string name="list_fragment_label">My places</string>
+    <string name="edit_fragment_label">Add place</string>
+    <string name="view_fragment_label">View my place</string>
     <string name="editmyplace_name_label">Name</string>
     <string name="editmyplace_desc_label">Description</string>
     <string name="editmyplace_add_label">Add</string>
     <string name="editmyplace_cancel_label">Cancel</string>
+    <string name="viewmypalce_name">Name:</string>
+    <string name="viewmypalce_desc">Description:</string>
+    <string name="viewmyplace_finished_label">Close</string>
+    <string name="editmyplace_save_label">Save</string>
+
 
     <string name="next">Next</string>
     <string name="previous">Previous</string>
