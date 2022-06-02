@@ -18,7 +18,7 @@ import elfak.mosis.myplaces.model.MyPlacesViewModel
  */
 class ListFragment : Fragment() {
 
-    private var _binding: FragmentHomeBinding? = null
+    private var _binding: FragmentListBinding? = null
 
 
     // This property is only valid between onCreateView and
@@ -31,7 +31,7 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentListBinding.inflate(inflater, container, false)
         return binding.root
 
     }
